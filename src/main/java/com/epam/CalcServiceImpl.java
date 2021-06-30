@@ -1,14 +1,17 @@
 package com.epam;
 
+//QualityGateIssuesAndFailed tests
 public class CalcServiceImpl implements CalcService {
     @Override
     public int add(int a, int b) {
+        var c = a + b;
         return a + b;
     }
 
     @Override
     public int multiply(int a, int b) {
-        return a * b;
+        int c = a * b;
+        return c;
     }
 
     @Override
@@ -18,9 +21,6 @@ public class CalcServiceImpl implements CalcService {
 
     @Override
     public int divide(int a, int b) {
-        if (b == 0) {
-            return 0;
-        }
         return a / b;
     }
 }
